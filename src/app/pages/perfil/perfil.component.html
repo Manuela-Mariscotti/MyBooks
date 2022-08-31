@@ -1,0 +1,94 @@
+<section id="section__intro">
+    <div class="row justify-content-md-center">
+        <div class="col-7 espaciador"></div>
+    </div>
+    
+    <div class="row justify-content-around">
+<!-- FORMULARIO EDITAR PERFIL -->
+        <div class="col-5 p-5 align-self-center contenedor-titulo rounded text-white">
+            <form>
+                <div class="form-group p-4">
+
+                    <h1 class="text-center text-white">Editar perfil</h1>
+            
+                    <div class="form-group ">
+                        <label for="nombre ">Nombre</label>
+                        <input type="text" class="form-control" id="nombreForm" #nombre placeholder="modifica el nombre">
+                        
+                    </div>
+                        
+                    <div class="form-group">
+                        <label for="apellido">Apellido</label>
+                        <input type="text" class="form-control" id="apellidoForm" #apellido placeholder="modifica el apellido">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" class="form-control" id="emailForm" #email aria-describedby="emailHelp" placeholder="modifica el email">
+                    </div>        
+
+                    <div class="form-group">
+                        <label for="apellido">Url</label>
+                        <input type="text" class="form-control" id="urlForm" #url placeholder="modifica la url">
+                    </div><br>
+            
+                    <div class="form-group">
+                        <button type="button" class="btn btn-success" on-click=modificar(nombre.value,apellido.value,email.value,url.value)>Modificar</button>
+                        <small [hidden] ="cartelUsuarioModificado" class="form-text text-success p-3">Usuario modificado</small>
+  
+                    </div>
+
+                </div>
+            </form>
+        </div>
+<!-- FORMULARIO MOSTRAR PERIL -->
+        <div class="col-5 p-3 align-self-center contenedor-titulo rounded">
+            <form>
+                <div class="form-group p-5 text-white rounded bg-success">
+
+                    <div class="contenedor-foto row justify-content-md-center">
+                        <img src="../../../assets/foto-perfil-maria-sm.jpg" alt="..." class="p-3 foto-perfil">
+                    </div>
+
+                    <h3 class="text-center text-white">{{miUsuario.nombreCompleto()}}</h3>
+                    <div class="form-group row ">
+                        <label for="nombre " class="col-sm-3 col-form-label ">Nombre</label>
+                        <div class="col-sm-9">
+                          <input type="text" readonly class="form-control-plaintext text-white " id="nombrePerfil"  value="{{miUsuario.nombre}}">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="apellido" class="col-sm-3 col-form-label">Apellido</label>
+                        <div class="col-sm-9">
+                            <input type="text" readonly class="form-control-plaintext text-white" id="apellidoPerfil"  value="{{miUsuario.apellido}}">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="email" class="col-sm-3 col-form-label">Correo</label>
+                        <div class="col-sm-9">
+                            <input type="text" readonly class="form-control-plaintext text-white" id="emailPerfil" value="{{miUsuario.email}}">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="url" class="col-sm-3 col-form-label">URL</label>
+                        <div class="col-sm-9">
+                            <input type="text" readonly class="form-control-plaintext text-white" id="urlPerfil" value="{{miUsuario.url}}">
+                        </div>
+                    </div>
+                        
+
+            
+
+
+                </div>
+            </form>
+            
+        </div>        
+    </div>
+
+
+ 
+</section>
