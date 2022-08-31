@@ -1,0 +1,32 @@
+#section__intro{
+    /* width: 100vw; */
+    height: fit-content;
+    background-image: url("../../../assets/imagen-background.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.espaciador{
+    height: 100px;
+}
+.contenedor-info{
+    height: 300px;
+    background-color: rgba(75, 75, 75, 0.822);
+}
+.contenedor-imagen{
+    height: 300px;
+}
+.portada-img{
+    height: 100%;
+    width: fit-content;
+}
+.claseBotonVerdeClaro{
+    background-color: rgb(47, 180, 180);
+    color:white
+}
+
+.contenedor-formulario-libro{
+    height: fit-content;
+    background-color: rgba(75, 75, 75, 0.822);
+}

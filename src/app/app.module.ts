@@ -10,6 +10,9 @@ import { FormularioRegistroComponent } from './component/formulario-registro/for
 import { RegistroComponent } from './pages/registro/registro.component';
 import { PerfilComponent } from './pages/perfil/perfil.component';
 import { LibrosComponent } from './pages/libros/libros.component';
+import { CodREFPipe } from './pipes/cod-ref.pipe';
+import { PhotoSRCPipe } from './pipes/photo-src.pipe';
+import { AddLibroComponent } from './pages/add-libro/add-libro.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,10 @@ import { LibrosComponent } from './pages/libros/libros.component';
     FormularioRegistroComponent,
     RegistroComponent,
     PerfilComponent,
-    LibrosComponent
+    LibrosComponent,
+    CodREFPipe,
+    PhotoSRCPipe,
+    AddLibroComponent
   ],
   imports: [
     BrowserModule,
