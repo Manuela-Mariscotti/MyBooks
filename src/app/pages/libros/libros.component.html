@@ -1,7 +1,14 @@
 <section id="section__intro">
-<!-- ESPACIADOR -->
+<!-- BUSCADOR -->
     <div class="row justify-content-md-center">
-        <div class="col-7 espaciador"></div>
+        <div class="col-4 espaciador">
+            <div class="input-group mt-3">
+                <input type="text" #id_libro class="form-control" placeholder="Introduce la Ref- de un libro.." aria-label="Recipient's username" aria-describedby="button-addon2">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-light" type="button" id="button-addon2" on-click=buscarUnLibro(id_libro.value)>Buscar</button>
+                </div>
+            </div>
+        </div>
     </div>
 <!-- AREA TARJETAS -->
     <div class="row px-5 justify-content-around">
@@ -16,6 +23,9 @@
     <!-- TARJETAS -->        
             <div class="card m-3 " style="width: 18rem;">
     <!-- PORTADA LIBRO -->
+                <button type="button" class="mt-2 close rounded border-0 align-self-end " data-dismiss="toast" aria-label="Close" on-click=eliminarUnLibro(element.id_libro)>
+                    <span aria-hidden="true">&times;</span>
+                </button>
                 <div class="row justify-content-center border-bottom contenedor-imagen">
                     <img src={{element.photo}} class="card-img-top py-3 portada-img" alt="...">
                 </div>
@@ -59,7 +69,8 @@
          </div>           -->
 
     </div>
-    <div class="row p-3 justify-content-md-center bg-warning">
+<!-- FORMULARIO AÑADIR LIBRO -->
+    <!-- <div class="row p-3 justify-content-md-center bg-warning">
         <div class="col-5 p-5 align-self-center contenedor-titulo rounded text-white contenedor-formulario-libro">
 
             <form>
@@ -96,14 +107,14 @@
                 </div><br>
         
                 <div class="form-group">
-                    <button type="button" class="btn btn-success" on-click=insertarLibro(titulo.value,autor.value,tipoLibro.value,precio.value,photo.value,id_libro.value)>Añadir libro</button>
-                    <!-- <small [hidden] ="cartelUsuarioModificado" class="form-text text-success p-3">Libro añadido correctamente</small> -->
+                    <button type="button" class="btn btn-success" on-click=insertarLibro(id_libro.value,titulo.value,tipoLibro.value,autor.value,precio.value,photo.value)>Añadir libro</button>
                 </div>
                 
             </form>
         </div>
-    </div> 
+    </div>  -->
     <div class="row justify-content-md-center">
         <div class="col-7 espaciador"></div>
     </div>    
 </section>
+                    <!-- <small [hidden] ="cartelUsuarioModificado" class="form-text text-success p-3">Libro añadido correctamente</small> -->

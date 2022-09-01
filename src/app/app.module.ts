@@ -13,6 +13,7 @@ import { LibrosComponent } from './pages/libros/libros.component';
 import { CodREFPipe } from './pipes/cod-ref.pipe';
 import { PhotoSRCPipe } from './pipes/photo-src.pipe';
 import { AddLibroComponent } from './pages/add-libro/add-libro.component';
+import { UpdateLibroComponent } from './pages/update-libro/update-libro.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { AddLibroComponent } from './pages/add-libro/add-libro.component';
     LibrosComponent,
     CodREFPipe,
     PhotoSRCPipe,
-    AddLibroComponent
+    AddLibroComponent,
+    UpdateLibroComponent
   ],
   imports: [
     BrowserModule,

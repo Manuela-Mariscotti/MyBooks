@@ -14,7 +14,6 @@
     height: 300px;
     background-color: rgba(75, 75, 75, 0.822);
 }
-
 .contenedor-imagen{
     height: 300px;
 }
@@ -30,4 +29,8 @@
 .contenedor-formulario-libro{
     height: fit-content;
     background-color: rgba(75, 75, 75, 0.822);
+}
+
+.contenedor-gral-formulario{
+    background-color:  rgba(177, 175, 175, 0.822);
 }
